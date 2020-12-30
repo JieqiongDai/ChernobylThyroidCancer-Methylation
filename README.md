@@ -8,6 +8,6 @@ Major steps in the workflow are:
 1) Python
 2) Snakemake
 3) R:
-    rmakrdown
-    data.table
+    1) rmakrdown
+    2) data.table
     
