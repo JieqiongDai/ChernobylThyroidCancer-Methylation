@@ -1,0 +1,35 @@
+---
+title: "Detect differentially methylated cpg islands for continuous phenotype using the tool"
+author: "Jieqiong Dai"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+      html_document:
+        code_folding: hide
+        toc: true
+        toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Use 'minfi' to detect differential methylated cpg islands 
+
+Phenotype with countinuous values DMP
+```{r,message=FALSE,warning=FALSE}
+library(minfi)
+load("../data/inital_data.Rdata")
+p <- pheno $ pheno
+dmp1 <- dmpFinder(beta, pheno = p  , type = "continuous")
+sig_dmp1 <- subset(dmp1,qval<=0.01)
+nrow(sig_dmp1)
+annot <- read.csv("../data/MethylationEPIC_v-1-0_B2_anno.csv",header=T)
+annot_gene <- annot[,c(1,15:20,25,27:33,44)]
+library(data.table)
+sig_dmp_data1 <- setDT(sig_dmp1, keep.rownames = TRUE)[]
+sig_dmp_anno1 <- merge(sig_dmp_data1,annot_gene,by.x="rn",by.y="IlmnID")
+write.csv(sig_dmp_anno1,"../minfi/phenotype_minfi_dmp_q0.01_annot.csv",row.names=F)
+
+save.image("../minfi/minfi_data.Rdata")
+
+```

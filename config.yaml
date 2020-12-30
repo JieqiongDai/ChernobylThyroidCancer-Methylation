@@ -1,0 +1,4 @@
+#categorical phenotype 
+minfi_type: 'minfi_cat'
+#continous phenotype
+#minfi_type: 'minfi_con'
