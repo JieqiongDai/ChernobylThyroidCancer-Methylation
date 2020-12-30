@@ -1,0 +1,44 @@
+---
+title: "Detect differentially methylated cpg islands using the tool ChAMP"
+author: "Jieqiong Dai"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+      html_document:
+        code_folding: hide
+        toc: true
+        toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Use champ to detect differential methylated cpg islands,differential methylated regions, and GESA pathways
+
+## DMP
+```{r,message=FALSE,warning=FALSE}
+library("ChAMP")
+load("../data/inital_data.Rdata")
+p <- pheno $ pheno
+myDMP1 <- champ.DMP(beta = beta,pheno=p,arraytype="EPIC")
+write.csv(myDMP1[[1]],"../champ/phenotype_champ_dmp_q0.05.csv")
+myDMP1_q0.01 <- subset(myDMP1[[1]],adj.P.Val <= 0.01)
+nrow(myDMP1_q0.01)
+write.csv(myDMP1_q0.01,"../champ/phenotype_champ_dmp_q0.01.csv")
+```
+## DMR
+```{r,message=FALSE,warning=FALSE}
+library(ggfortify)
+myDMR1 <- champ.DMR(beta=beta,pheno=p,method="Bumphunter",arraytype="EPIC")
+nrow(myDMR1 $ BumphunterDMR)
+write.csv(myDMR1 $ BumphunterDMR,"../champ/phenotype_champ_sig_dmr_q0.05.csv")
+```
+## GSEA pathways, depedent on sig dmp q0.01, sig dmr q0.05
+```{r,message=FALSE,warning=FALSE}
+myGSEA1 <- champ.GSEA(beta=beta,DMP=myDMP1_q0.01, DMR=myDMR1, arraytype="EPIC",adjPval=0.05, method="fisher")
+write.csv(myGSEA1 $ DMP,"../champ/phenotype_champ_GSEA_path_sig_dmp_q0.01.csv")
+write.csv(myGSEA1 $ DMR,"../champ/phenotype_champ_GSEA_path_sig_dmr_q0.05.csv")
+
+save.image("../champ/champ_data.Rdata")
+
+```

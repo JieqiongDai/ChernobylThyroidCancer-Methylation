@@ -1,0 +1,39 @@
+---
+title: "Read in normalized beta value data and sample table"
+author: "Jieqiong Dai"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+      html_document:
+        code_folding: hide
+        toc: true
+        toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Read in QC controled methylation normalized beta value data
+```{r,message=FALSE,warning=FALSE}
+library(data.table)
+system.time(beta_all <- (fread("../data/normBeta.txt",header=T)))
+beta_all <- as.data.frame(beta_all)
+rownames(beta_all) <- beta_all $ TargetID
+beta_all <- beta_all[,order(colnames(beta_all))]
+```
+
+# Read in sample table
+```{r,message=FALSE,warning=FALSE}
+pheno <- read.csv("../data/pheno.csv",row.names=1,header=T)
+pheno <- pheno[rownames(pheno)%in%colnames(beta_all),,drop=F]
+pheno <- pheno[order(rownames(pheno)),,drop=F]
+```
+
+# Match normalized beta value and sample tables
+```{r,message=FALSE,warning=FALSE}
+beta <- beta_all[,colnames(beta_all)%in%rownames(pheno)]
+beta <- as.matrix(beta)
+colnames(beta)==rownames(pheno)
+
+save.image("../data/inital_data.Rdata")
+```

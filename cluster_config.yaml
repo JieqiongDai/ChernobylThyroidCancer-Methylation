@@ -1,0 +1,28 @@
+__default__:
+    mem: 24g
+    partition: quick,norm
+    time: '4:00:00'
+    scratch: lscratch:1 
+
+read_in:
+    mem: 128g
+    partition: quick, norm
+    time: '4:00:00'
+
+minfi:
+    mem: 220g
+    partition: norm
+    time: '40:00:00'
+
+champ:
+    mem: 220g
+    partition: norm
+    time: '100:00:00'
+
+overlap:
+    mem: 220g
+    partition: norm
+    time: '4:00:00'
+
+
+ 
