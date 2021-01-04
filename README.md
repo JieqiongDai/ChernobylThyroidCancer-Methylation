@@ -7,11 +7,11 @@ Major steps in the workflow are:
 3. Detect differentially methylated cpg islands using the tool ChAMP 
 4) Report the overlap of the detected differntially methylated cpg islands by the two tools
 ## II. Dependencies
-1) [Python](https://www.python.org)
-2) [Snakemake](https://snakemake.readthedocs.io/en/stable/)
-3) [R](https://www.r-project.org):
-    1) [rmakrdown](https://cran.r-project.org/web/packages/rmarkdown/index.html)
-    2) [data.table](https://cran.r-project.org/web/packages/data.table/index.html)
+* [Python](https://www.python.org)
+* [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+* [R](https://www.r-project.org):
+    * [rmakrdown](https://cran.r-project.org/web/packages/rmarkdown/index.html)
+    * [data.table](https://cran.r-project.org/web/packages/data.table/index.html)
     3) [minfi](https://bioconductor.org/packages/release/bioc/html/minfi.html)
     4) [ChAMP](https://bioconductor.org/packages/release/bioc/html/ChAMP.html)
     5) [ggfortify](https://cran.r-project.org/web/packages/ggfortify/index.html)
