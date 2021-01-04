@@ -10,14 +10,14 @@ Major steps in the workflow are:
 1) [Python](https://www.python.org)
 2) [Snakemake](https://snakemake.readthedocs.io/en/stable/)
 3) [R](https://www.r-project.org):
-    1) rmakrdown
-    2) data.table
-    3) minfi
-    4) ChAMP
-    5) ggfortify
-    6) ggplot2
-    7) pheatmap
-    8) plotly
+    1) [rmakrdown](https://cran.r-project.org/web/packages/rmarkdown/index.html)
+    2) [data.table](https://cran.r-project.org/web/packages/data.table/index.html)
+    3) [minfi](https://bioconductor.org/packages/release/bioc/html/minfi.html)
+    4) [ChAMP](https://bioconductor.org/packages/release/bioc/html/ChAMP.html)
+    5) [ggfortify](https://cran.r-project.org/web/packages/ggfortify/index.html)
+    6) [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
+    7) [pheatmap](https://cran.r-project.org/web/packages/pheatmap/index.html)
+    8) [plotly](https://cran.r-project.org/web/packages/plotly/index.html)
 ## III. Input requirements
 1) config.yaml: select the right type of the phenotype data
 2) data/normBeta.txt: normalized beta value data stored in the directory: data/
