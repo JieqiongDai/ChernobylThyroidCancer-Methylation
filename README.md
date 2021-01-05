@@ -19,7 +19,7 @@ Major steps in the workflow are:
   * [pheatmap](https://cran.r-project.org/web/packages/pheatmap/index.html)
   * [plotly](https://cran.r-project.org/web/packages/plotly/index.html)
 ## III. Input requirements
-* config.yaml: select the right type of the phenotype data
-* data/normBeta.txt: normalized beta value data stored in the directory: data/
-* data/pheno.csv: sample table stored in the direcotry: data/ 
-* data/MethylationEPIC_v-1-0_B2_anno.csv: probe annotation file stored i the directory: data/
+* [config.yaml](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation): select the right type of the phenotype data
+* [data/normBeta.txt](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): normalized beta value data stored in the directory: data/
+* [data/pheno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): sample table stored in the direcotry: data/ 
+* [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored i the directory: data/
