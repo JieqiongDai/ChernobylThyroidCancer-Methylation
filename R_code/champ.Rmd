@@ -1,5 +1,5 @@
 ---
-title: "Detect differentially methylated cpg islands using the tool ChAMP"
+title: "Detection of differentially methylated cpg islands using the tool ChAMP"
 author: "Jieqiong Dai"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
