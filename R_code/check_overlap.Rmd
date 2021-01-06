@@ -1,5 +1,5 @@
 ---
-title: "Report the overlap of the detected differntially methylated cpg islands by the two tools"
+title: "Reporting the overlap of differntially methylated cpg islands detected by the two tools"
 author: "Jieqiong Dai"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
