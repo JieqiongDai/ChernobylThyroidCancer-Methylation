@@ -1,5 +1,5 @@
 ---
-title: "Read in normalized beta value data and sample table"
+title: "Reading in normalized beta value data and sample table"
 author: "Jieqiong Dai"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
