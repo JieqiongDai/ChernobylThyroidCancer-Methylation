@@ -1,5 +1,5 @@
 ---
-title: "Detect differentially methylated cpg islands for continuous phenotype using the tool"
+title: "Detection of differentially methylated cpg islands for continuous phenotype using the tool"
 author: "Jieqiong Dai"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
