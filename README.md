@@ -3,10 +3,10 @@
 This workflow was used for the detection of differentially methylated cpg islands in the Chernobyl Thyroid Cancer study.
 
 Major steps in the workflow are:
-1) Read in normalized beta value data and sample table, and prepare related data for the following analysis
-2) Detect differentially methylated cpg islands using the tool minfi
-3) Detect differentially methylated cpg islands using the tool ChAMP
-4) Report the overlap of the detected differntially methylated cpg islands by the two tools
+1) Reading in normalized beta value data and sample table and preparing related data for the following analysis
+2) Detecting differentially methylated cpg islands using the tool minfi
+3) Detecting differentially methylated cpg islands using the tool ChAMP
+4) Reporting the overlap of differntially methylated cpg islands detected by the two tools
 ## II. Dependencies
 * [Python](https://www.python.org)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/)
