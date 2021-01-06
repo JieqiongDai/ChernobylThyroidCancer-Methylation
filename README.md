@@ -4,7 +4,7 @@ This workflow was used for the detection of differentially methylated cpg island
 Major steps in the workflow are:
 1. Read in normalized beta value data and sample table, and prepare related data for the following analysis
 2. Detect differentially methylated cpg islands using the tool minfi
-3. Detect differentially methylated cpg islands using the tool ChAMP 
+3. Detect differentially methylated cpg islands using the tool ChAMP
 4) Report the overlap of the detected differntially methylated cpg islands by the two tools
 ## II. Dependencies
 * [Python](https://www.python.org)
