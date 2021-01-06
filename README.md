@@ -1,6 +1,7 @@
 # Chernobyl Thyroid Cancer - Methylation
 ## I. Description
 This workflow was used for the detection of differentially methylated cpg islands in the Chernobyl Thyroid Cancer study.
+
 Major steps in the workflow are:
 1) Read in normalized beta value data and sample table, and prepare related data for the following analysis
 2) Detect differentially methylated cpg islands using the tool minfi
