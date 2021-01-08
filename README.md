@@ -26,7 +26,7 @@ Major steps in the workflow are:
 * [data/pheno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): sample table stored in the direcotry: data/ 
 * [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored i the directory: data/
 
-## IIII. Working directory structure
+## IV. Working directory structure
 ```bash
 .
 ├── champ                                               
