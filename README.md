@@ -29,7 +29,7 @@ Major steps in the workflow are:
 ## IIII. Working directory structure
 ```bash
 .
-├── champ # output of ChAMP                                                 
+├── champ                                               
 │   ├── champ_data.Rdata
 │   ├── champ.html
 │   ├── phenotype_champ_dmp_q0.01.csv
@@ -38,19 +38,19 @@ Major steps in the workflow are:
 │   ├── phenotype_champ_GSEA_path_sig_dmr_q0.05.csv
 │   └── phenotype_champ_sig_dmr_q0.05.csv
 ├── cluster_config.yaml
-├── config.yaml # select the type of phenotype data
-├── data # initial input data
+├── config.yaml 
+├── data 
 │   ├── data_read_in.html
 │   ├── inital_data.Rdata
-│   ├── MethylationEPIC_v-1-0_B2_anno.csv # probe annotation file
-│   ├── normBeta.txt # normalized beta value data 
-│   └── pheno.csv # sample table
+│   ├── MethylationEPIC_v-1-0_B2_anno.csv 
+│   ├── normBeta.txt 
+│   └── pheno.csv 
 ├── log 
-├── minfi # output of minfi
+├── minfi 
 │   ├── minfi_cat.html
 │   ├── minfi_data.Rdata
 │   └── phenotype_minfi_dmp_q0.01_annot.csv
-├── overlap # final result
+├── overlap 
 │   ├── check_overlap.html
 │   ├── overlap_phenotype_dmp_q0.01.csv
 │   ├── overlap_phenotype_dmp_q0.01fc2.csv
