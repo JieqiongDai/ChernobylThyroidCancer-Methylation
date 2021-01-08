@@ -7,6 +7,7 @@ Major steps in the workflow are:
 2) Detecting differentially methylated cpg islands using the tool minfi
 3) Detecting differentially methylated cpg islands using the tool ChAMP
 4) Reporting the overlap of differntially methylated cpg islands detected by the two tools
+
 ## II. Dependencies
 * [Python](https://www.python.org)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/)
@@ -24,3 +25,43 @@ Major steps in the workflow are:
 * [data/normBeta.txt](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): normalized beta value data stored in the directory: data/
 * [data/pheno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): sample table stored in the direcotry: data/ 
 * [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored i the directory: data/
+
+## IIII. Working directory structure
+.
+├── champ # output of ChAMP                                                 
+│   ├── champ_data.Rdata
+│   ├── champ.html
+│   ├── phenotype_champ_dmp_q0.01.csv
+│   ├── phenotype_champ_dmp_q0.05.csv
+│   ├── phenotype_champ_GSEA_path_sig_dmp_q0.01.csv
+│   ├── phenotype_champ_GSEA_path_sig_dmr_q0.05.csv
+│   └── phenotype_champ_sig_dmr_q0.05.csv
+├── cluster_config.yaml
+├── config.yaml # select the type of phenotype data
+├── data # initial input data
+│   ├── data_read_in.html
+│   ├── inital_data.Rdata
+│   ├── MethylationEPIC_v-1-0_B2_anno.csv # probe annotation file
+│   ├── normBeta.txt # normalized beta value data 
+│   └── pheno.csv # sample table
+├── log 
+├── minfi # output of minfi
+│   ├── minfi_cat.html
+│   ├── minfi_data.Rdata
+│   └── phenotype_minfi_dmp_q0.01_annot.csv
+├── overlap # final result
+│   ├── check_overlap.html
+│   ├── overlap_phenotype_dmp_q0.01.csv
+│   ├── overlap_phenotype_dmp_q0.01fc2.csv
+│   ├── overlap_phenotype_sig_dmp_q0.01fc2_beta_data.csv
+│   └── overlap.Rdata
+├── R_code 
+│   ├── champ.Rmd
+│   ├── check_overlap.Rmd
+│   ├── data_read_in.Rmd
+│   ├── minfi_cat.Rmd
+│   └── minfi_con.Rmd
+├── README.md
+├── run.sh 
+├── Snakefile
+└── snakemake.batch
