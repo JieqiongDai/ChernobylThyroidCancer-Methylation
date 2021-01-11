@@ -25,8 +25,11 @@ Major steps in the workflow are:
 * [data/normBeta.txt](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): normalized beta value data stored in the directory: data/
 * [data/pheno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): sample table stored in the direcotry: data/ 
 * [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored i the directory: data/
-
-## IV. Working directory structure
+## IV. Output
+* Results from minfi in directory: minfi/
+* Results from ChAMP in directory: champ/
+* Final results in directory: overlap/
+## V. Working directory structure
 ```bash
 .
 ├── champ                                               
