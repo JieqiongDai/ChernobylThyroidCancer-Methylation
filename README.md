@@ -9,7 +9,6 @@ Major steps in the workflow are:
 4) Reporting the overlap of differntially methylated cpg islands detected by the two tools
 
 ## II. Dependencies
-* [Python](https://www.python.org)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/)
 * [R](https://www.r-project.org):
   * [rmakrdown](https://cran.r-project.org/web/packages/rmarkdown/index.html)
