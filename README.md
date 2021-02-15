@@ -1,6 +1,6 @@
 # Chernobyl Thyroid Cancer - Methylation
 ## I. Description
-This workflow was used for the detection of differentially methylated cpg islands in the Chernobyl Thyroid Cancer study.
+This workflow was used for the detection of differentially methylated cpg islands in the Chernobyl Thyroid Cancer Study.
 
 Major steps in the workflow are:
 1) Reading in normalized beta value data and sample table and preparing related data for the following analysis
@@ -19,11 +19,11 @@ Major steps in the workflow are:
   * [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
   * [pheatmap](https://cran.r-project.org/web/packages/pheatmap/index.html)
   * [plotly](https://cran.r-project.org/web/packages/plotly/index.html)
-## III. Input requirements
+## III. Input
 * [config.yaml](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/blob/main/config.yaml): select the type of phenotype data
 * [data/normBeta.txt](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): normalized beta value data stored in the directory: data/
 * [data/pheno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): sample table stored in the direcotry: data/ 
-* [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored i the directory: data/
+* [data/MethylationEPIC_v-1-0_B2_anno.csv](https://github.com/NCI-CGR/ChernobylThyroidCancer-Methylation/tree/main/data): probe annotation file stored in the directory: data/
 ## IV. Output
 * Results from minfi in directory: minfi/
 * Results from ChAMP in directory: champ/
@@ -65,7 +65,5 @@ Major steps in the workflow are:
 │   ├── minfi_cat.Rmd
 │   └── minfi_con.Rmd
 ├── README.md
-├── run.sh 
-├── Snakefile
-└── snakemake.batch
+└── Snakefile
 ```
