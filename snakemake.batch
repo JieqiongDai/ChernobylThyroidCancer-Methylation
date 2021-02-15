@@ -1,7 +1,0 @@
-#!/bin/bash
-mkdir log
-
-module load snakemake R || exit 1
-snakemake --unlock
-sbcmd="sbatch --cpus-per-task={threads} --time={cluster.time} --mem={cluster.mem} --gres={cluster.scratch} --partition={cluster.partition} --output=log/snakejob_%j.out"
-snakemake -pr --cluster-config cluster_config.yaml --cluster "$sbcmd" --keep-going --jobs 50 --latency-wait 120 all
