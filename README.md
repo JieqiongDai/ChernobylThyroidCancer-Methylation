@@ -39,7 +39,6 @@ Major steps in the workflow are:
 │   ├── phenotype_champ_GSEA_path_sig_dmp_q0.01.csv
 │   ├── phenotype_champ_GSEA_path_sig_dmr_q0.05.csv
 │   └── phenotype_champ_sig_dmr_q0.05.csv
-├── cluster_config.yaml
 ├── config.yaml 
 ├── data 
 │   ├── data_read_in.html
