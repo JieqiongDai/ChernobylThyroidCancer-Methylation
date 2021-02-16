@@ -47,6 +47,7 @@ Major steps in the workflow are:
 │   ├── normBeta.txt 
 │   └── pheno.csv 
 ├── log 
+│   └── log files
 ├── minfi 
 │   ├── minfi_cat.html
 │   ├── minfi_data.Rdata
@@ -63,6 +64,5 @@ Major steps in the workflow are:
 │   ├── data_read_in.Rmd
 │   ├── minfi_cat.Rmd
 │   └── minfi_con.Rmd
-├── README.md
 └── Snakefile
 ```
